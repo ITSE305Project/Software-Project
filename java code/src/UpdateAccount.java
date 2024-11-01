@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 // Data Layer: Class to represent a customer with their details
 class updateAccount {
@@ -11,7 +10,7 @@ class updateAccount {
 
     // Constructor to initialize a Customer object
     public updateAccount(String firstName, String lastName, int password, 
-                    String email, int pNumber, String location) {
+    String email, int pNumber, String location) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = password;
@@ -45,36 +44,15 @@ class AccountManager {
     public AccountManager(Customer customer) {this.customer = customer;}
 
     // presentation layer: update account details
-    public void updateAccount() {
-        Scanner kbd = new Scanner(System.in);
+    public void UpdateAccount() {
 
         System.out.println("Update your account details (leave blank to keep current value):");
-
         System.out.print("Enter new first name: ");
-        String fName = kbd.nextLine();
-        if (!fName.isEmpty())
-            customer.setFName(firstName);
-
         System.out.print("Enter new last name: ");
-        String lName = kbd.nextLine();
-        if (!lName.isEmpty())
-            customer.setLName(lastName);
-
         System.out.print("Enter new email: ");
-        String email = kbd.nextLine();
-        if (!email.isEmpty())
-            customer.setEmail(email);
-
+        System.out.print("Enter new password: ");
         System.out.print("Enter new phone number: ");
-        int pNumber = kbd.nextLine();
-        if (!pNumber.isEmpty())
-            customer.setPNumber(pNumber);
-
         System.out.print("Enter new location: ");
-        String location = kbd.nextLine();
-        if (!location.isEmpty())
-            customer.setLocation(location);
-
         System.out.println("Account updated successfully!");}
-    }
 }
+
