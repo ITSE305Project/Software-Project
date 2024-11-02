@@ -1,5 +1,5 @@
+import java.util.Scanner;
 
-// Data Layer: Class to represent a customer with their details
 class updateAccount {
     private String firstName; // First Name
     private String lastName; // Last Name
@@ -43,16 +43,37 @@ class AccountManager {
     // Constructor to initialize the AccountManager with a Customer
     public AccountManager(Customer customer) {this.customer = customer;}
 
-    // presentation layer: update account details
-    public void UpdateAccount() {
+// Presentation Layer
+    public void updateAccount() {
+        try (Scanner kbd = new Scanner(System.in)) {
+            System.out.println("Update your account details (leave blank to keep current value):");
 
-        System.out.println("Update your account details (leave blank to keep current value):");
-        System.out.print("Enter new first name: ");
-        System.out.print("Enter new last name: ");
-        System.out.print("Enter new email: ");
-        System.out.print("Enter new password: ");
-        System.out.print("Enter new phone number: ");
-        System.out.print("Enter new location: ");
+            System.out.print("Enter new first name: ");
+            String fName = kbd.nextLine();
+            if (!fName.isEmpty())
+                customer.setFName(fName);
+
+            System.out.print("Enter new last name: ");
+            String lName = kbd.nextLine();
+            if (!lName.isEmpty())
+                customer.setLName(lName);
+
+            System.out.print("Enter new email: ");
+            String email = kbd.nextLine();
+            if (!email.isEmpty())
+                customer.setEmail(email);
+
+            System.out.print("Enter new phone number: ");
+            String pNumber = kbd.nextLine();
+            if (!pNumber.isEmpty())
+                customer.setPNumber(pNumber);
+
+            System.out.print("Enter new location: ");
+            String location = kbd.nextLine();
+            if (!location.isEmpty())
+                customer.setLocation(location);
+        }
+
         System.out.println("Account updated successfully!");}
 }
 
