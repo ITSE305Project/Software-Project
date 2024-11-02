@@ -33,6 +33,31 @@ class Customer {
                                 ",location='" + location + '\'' +
                                 '}';
                 }
+
+                public void setEmail(String email2) {
+                    // TODO Auto-generated method stub
+                    throw new UnsupportedOperationException("Unimplemented method 'setEmail'");
+                }
+
+                public void setPNumber(String pNumber2) {
+                    // TODO Auto-generated method stub
+                    throw new UnsupportedOperationException("Unimplemented method 'setPNumber'");
+                }
+
+                public void setLocation(String location2) {
+                    // TODO Auto-generated method stub
+                    throw new UnsupportedOperationException("Unimplemented method 'setLocation'");
+                }
+
+                public void setLName(Object lastName) {
+                    // TODO Auto-generated method stub
+                    throw new UnsupportedOperationException("Unimplemented method 'setLName'");
+                }
+
+                public void setFName(Object firstName) {
+                    // TODO Auto-generated method stub
+                    throw new UnsupportedOperationException("Unimplemented method 'setFName'");
+                }
 }
 
 // this class to hunde account creation process
