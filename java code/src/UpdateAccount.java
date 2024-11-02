@@ -2,17 +2,17 @@ import java.util.Scanner;
 
 class updateAccount {
     private String firstName; // First Name
-    private String lastName; // Last Name
+    private String lName; // Last Name
     private int password; // Password
     private String email; // Email
     private int pNumber; // Phone Number
     private String location; // location
 
     // Constructor to initialize a Customer object
-    public updateAccount(String firstName, String lastName, int password, 
+    public updateAccount(String firstName, String lName, int password, 
     String email, int pNumber, String location) {
         this.firstName = firstName;
-        this.lastName = lastName;
+        this.lName = lName;
         this.password = password;
         this.email = email;
         this.pNumber = pNumber;
@@ -21,15 +21,15 @@ class updateAccount {
 
     // Getters for customer details
     public String getFName() {return firstName;}
-    public String getLName() {return lastName;}
+    public String getLName() {return lName;}
     public String getEmail() {return email;}
     public int getPassword() {return password;}
     public int getPNumber() {return pNumber;}
     public String getLocation() {return location;}
 
     // Setters for customer details
-    public void setFName(String firstName) {this.firstName = firstName;}
-    public void setLName(String lastName) {this.lastName = lastName;}
+    public void setFName(String firstName) {this.fName = firstName;}
+    public void setLName(String lastName) {this.lName = lastName;}
     public void setEmail(String email) {this.email = email;}
     public void setPassword(int password) {this.password = password;}
     public void setPNumber(int pNumber) {this.pNumber = pNumber;}
