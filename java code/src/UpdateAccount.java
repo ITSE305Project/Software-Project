@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// Data layer
 class updateAccount {
     private String firstName; // First Name
     private String lName; // Last Name
@@ -28,7 +29,7 @@ class updateAccount {
     public String getLocation() {return location;}
 
     // Setters for customer details
-    public void setFName(String firstName) {this.fName = firstName;}
+    public void setFName(String firstName) {this.firstName = firstName;}
     public void setLName(String lastName) {this.lName = lastName;}
     public void setEmail(String email) {this.email = email;}
     public void setPassword(int password) {this.password = password;}
