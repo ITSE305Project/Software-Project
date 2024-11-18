@@ -23,7 +23,7 @@ class CustomerJUnitTest {
 
         var customer = createAccount.createNewAccount();
         //assertEquals("Customer{First Name='Ahmed',Last Name='Raed',username='alwadyani',email='ahmed@uob.com',phone Number='12345678',location='Bahrain'}",customer);
-        //assertTrue(customer.toString().contains("Customer{First Name='Ahmed',Last Name='Raed',username='alwadyani',email='ahmed@uob.com',phone Number='12345678',location='Bahrain'}") );
+        assertTrue(customer.toString().contains("Customer{First Name='Ahmed',Last Name='Raed',username='alwadyani',email='ahmed@uob.com',phone Number='12345678',location='Bahrain'}") );
 
     }
 
