@@ -10,8 +10,8 @@ class updateAccount {
     private String location; // location
 
     // Constructor to initialize a Customer object
-    public updateAccount(String firstName, String lName, String password, 
-    String email, String pNumber, String location) {
+    public updateAccount(String firstName, String lName, int password, 
+    String email, int pNumber, String location) {
         this.firstName = firstName;
         this.lName = lName;
         this.password = password;
@@ -24,25 +24,25 @@ class updateAccount {
     public String getFName() {return firstName;}
     public String getLName() {return lName;}
     public String getEmail() {return email;}
-    public String getPassword() {return password;}
-    public String getPNumber() {return pNumber;}
+    public int getPassword() {return password;}
+    public int getPNumber() {return pNumber;}
     public String getLocation() {return location;}
 
     // Setters for customer details
     public void setFName(String firstName) {this.firstName = firstName;}
     public void setLName(String lastName) {this.lName = lastName;}
-    public void setEmail(String email) {this.email = email;}
-    public void setPassword(String password) {this.password = password;}
+    public void setEmail(int email) {this.email = email;}
+    public void setPassword(int password) {this.password = password;}
     public void setPNumber(String pNumber) {this.pNumber = pNumber;}
     public void setLocation(String location) { this.location = location;}
 
                     }
 // Business Layer: Class to handle account management
-class AccountManager {
+class customer {
     private updateAccount customer;
 
     // Constructor to initialize the AccountManager with a Customer
-    public AccountManager(updateAccount customer) 
+    public customer(updateAccount customer) 
     {this.customer = customer;}
 
 // Presentation Layer
