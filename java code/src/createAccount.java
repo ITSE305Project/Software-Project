@@ -86,7 +86,7 @@ class Customer {
         this.location = location;
     }
 
-    // Method to validate email format using regex
+    //here in  Method to validate email format using regex
     private boolean isValidEmail(String email) {
         String emailRegex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
         return Pattern.matches(emailRegex, email);
