@@ -1,6 +1,5 @@
-import org.junit.Test;
-import static org.junit.Assert.*;
 
+// Test class for testing the payment presentation layer
 public class PaymentPresentationTest {
 
     @Test
@@ -16,6 +15,8 @@ public class PaymentPresentationTest {
         // Add assertions based on how the system should handle an invalid payment amount
     }
 }
+
+// Test class for testing the payment business logic
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -34,6 +35,8 @@ public class PaymentBusinessTest {
         assertFalse(paymentBusiness.validatePayment(invalidAmount));
     }
 }
+
+// Test class for testing the payment data layer
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -50,6 +53,8 @@ public class PaymentDataTest {
         // You can add more assertions based on the expected behavior of saving payment details
     }
 }
+
+// Test class for testing the receipt presentation layer
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -66,6 +71,8 @@ public class ReceiptPresentationTest {
         // You can add more assertions to validate the generation of the receipt
     }
 }
+
+// Test class for testing the receipt business logic
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -82,6 +89,8 @@ public class ReceiptBusinessTest {
         // You can add more assertions based on the expected behavior of sending the receipt email
     }
 }
+
+// Test class for testing the receipt data layer
 import org.junit.Test;
 import static org.junit.Assert.*;
 
