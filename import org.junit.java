@@ -108,3 +108,4 @@ public class ReceiptDataTest {
         // You can add more assertions based on the expected behavior of storing receipt information
     }
 }
+
