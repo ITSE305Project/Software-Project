@@ -38,12 +38,12 @@ class updateAccount {
 
                     }
 // Business Layer: Class to handle account management
-class updateAccount {
-    private updateAccount customer;
+class accountManage {
+    private updateAccount updateAccount;
 
     // Constructor to initialize the AccountManager with a Customer
-    public updateAccount(updateAccount updateAccount) 
-    {this.customer = customer;}
+    public accountManage(updateAccount updateAccount) 
+    {this.updateAccount = updateAccount;}
 
 // Presentation Layer
     public void updateAccount() {
@@ -53,27 +53,27 @@ class updateAccount {
             System.out.print("Enter new first name: ");
             String fName = kbd.nextLine();
             if (!fName.isEmpty())
-                customer.setFName(fName);
+                updateAccount.setFName(fName);
 
             System.out.print("Enter new last name: ");
             String lName = kbd.nextLine();
             if (!lName.isEmpty())
-                customer.setLName(lName);
+                updateAccount.setLName(lName);
 
             System.out.print("Enter new email: ");
             String email = kbd.nextLine();
             if (!email.isEmpty())
-                customer.setEmail(email);
+                updateAccount.setEmail(email);
 
             System.out.print("Enter new phone number: ");
             String pNumber = kbd.nextLine();
             if (!pNumber.isEmpty())
-                customer.setPNumber(pNumber);
+                updateAccount.setPNumber(pNumber);
 
             System.out.print("Enter new location: ");
             String location = kbd.nextLine();
             if (!location.isEmpty())
-                customer.setLocation(location);
+                updateAccount.setLocation(location);
         }
 
         System.out.println("Account updated successfully!");}
